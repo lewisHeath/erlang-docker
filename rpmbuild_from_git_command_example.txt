@@ -1,0 +1,1 @@
+rpmbuild -ba ~/rpmbuild/SPECS/erlang.spec -D "mytag OTP-28.1.1" -D "prefix /usr/local/erlang/28" -D "otp_version 28.1.1"
