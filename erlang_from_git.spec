@@ -28,7 +28,7 @@ git clone --branch %{mytag} --depth 1 https://github.com/erlang/otp.git
 %build
 cd otp
 echo "==> Configuring Erlang with prefix %{prefix}"
-./configure --prefix=%{prefix}
+./configure --prefix=%{prefix} %{erlang_configurations}
 make -j$(nproc)
 
 # This stage installs the built files into a temporary DESTDIR directory %{buildroot} which will later be used to package into the RPM
